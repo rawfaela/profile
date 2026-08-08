@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
     <title>Rafaela's Profile</title>
 </head>
 <body>
     <div id="header">
         <h1>Rafaela Amboni Ghellere</h1>
         <div id="menu">
-            <a href="" class="menu_opt">
+            <a href="#aboutme" class="menu_opt">
                 <span>About Me</span>
             </a>
             <a href="" class="menu_opt">
@@ -26,7 +27,26 @@
     </div>
 
     <div id="content">
+        <div id="translate">
+            <a href="" id="translate_button">
+                <span id="translate_text">Traduzir para português</span>
+            </a>
+        </div>
 
+        <div id="aboutme">
+            <img src="img/eu.jpeg" alt="" class="abtme_picture">
+            <div class="abtme">
+                <span class="abtme_text" id="abt_me1">
+                    Hey you! My name is Rafaela, and I’m a student and aspiring software developer with a passion for technology and problem-solving. I have a background in Informatics and experience with different areas of software development, including web development, mobile applications, databases, and IoT.
+                </span>
+                <span class="abtme_text" id="abt_me2">    
+                    I enjoy learning new technologies and turning ideas into practical projects (like this one!). I have worked with languages such as JavaScript, Python, Java, C++, C#, SQL, and Progress 4GL as well as technologies like React Native, Firebase, Arduino, and ESP32.
+                </span>
+                <span class="abtme_text" id="abt_me3">
+                    I’m always looking for opportunities to improve my skills, explore new challenges, and grow as a developer. I believe that every project is an opportunity to learn something new.
+                </span>
+            </div>
+        </div>
     </div>
 
     <div id="footer">
@@ -49,5 +69,8 @@
             </a>
         </div>
     </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
