@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+#header{
+    top: 0;
+    background-color: aquamarine;
+    text-align: center;
+}
+#menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+.menu_opt{
+    background-color: burlywood;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.menu_opt:hover{
+    transition: 25ms;
+    scale: 1.1;
+}
+
+#content{
+    flex: 1;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    background-color: aquamarine;
+    width: 100%;
+    text-align: center;
+}
+#contacts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.contact{
+
+}
+.contact:hover{
+    color: blue;
+}
+
+
+a{
+    text-decoration: none;
+    color: #000;
+}
