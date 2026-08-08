@@ -1,3 +1,10 @@
+/* COLOR PALETTE
+rgb(227, 192, 255)
+rgb(228, 155, 217)
+rgb(137, 72, 146)
+rgb(84, 8, 99)
+ */
+
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 
 body{
@@ -5,10 +12,11 @@ body{
     flex-direction: column;
     margin: 0;
     font-family: Google Sans;
+    background-color: rgb(227, 192, 255);
 }
 #header{
     top: 0;
-    background-color: aquamarine;
+    background-color: rgb(137, 72, 146);
     text-align: center;
 }
 #menu{
@@ -20,16 +28,17 @@ body{
 
 }
 .menu_opt{
-    background-color: burlywood;
+    background-color: rgb(84, 8, 99);
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     font-size: 18px;
     transition: 0.3s;
+    color: white;
 }
 .menu_opt:hover{
     transform: scale(1.05);
-    filter: brightness(95%);
+    filter: brightness(110%);
 }
 
 #content{
@@ -39,7 +48,7 @@ body{
 #footer{
     position: absolute;
     bottom: 0;
-    background-color: aquamarine;
+    background-color: rgb(228, 155, 217);
     width: 100%;
     text-align: center;
     display: flex;
