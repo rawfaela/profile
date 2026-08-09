@@ -126,14 +126,16 @@ a{
 }
 
 @media (max-width: 600px) {
-
     #menu {
         gap: 8px;
     }
-
     .menu_opt {
         font-size: 15px;
         padding: 8px;
+    }
+
+    #translate {
+        margin-top: 10px;
     }
 
     #aboutme {
@@ -141,26 +143,19 @@ a{
         margin: 20px;
         text-align: center;
     }
-
     .abtme_picture {
         height: 220px;
         width: 220px;
         object-fit: cover;
     }
-
     .abtme_text {
         font-size: 15px;
         line-height: 1.5;
     }
 
-    #translate {
-        margin-top: 10px;
-    }
-
     #contacts {
         gap: 15px;
     }
-
     .contact_img {
         height: 35px;
         width: 35px;
