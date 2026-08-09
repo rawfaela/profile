@@ -14,13 +14,13 @@
             <a href="#aboutme" class="menu_opt">
                 <span id="menu1">About Me</span>
             </a>
-            <a href="" class="menu_opt">
+            <a href="#projects" class="menu_opt">
                 <span id="menu2">Projects</span>
             </a>
-            <a href="" class="menu_opt">
+            <a href="#experience" class="menu_opt">
                 <span id="menu3">Experience</span>
             </a>
-            <a href="" class="menu_opt">
+            <a href="#certifications" class="menu_opt">
                 <span id="menu4">Certifications</span>
             </a>
         </div>
@@ -36,16 +36,50 @@
         <div id="aboutme">
             <img src="img/eu.jpeg" alt="" class="abtme_picture">
             <div class="abtme">
-                <span class="abtme_text" id="abt_me1">
-                    Hey you! My name is Rafaela, and I’m a student and aspiring software developer with a passion for technology and problem-solving. I have a background in Informatics and experience with different areas of software development, including web development, mobile applications, databases, and IoT.
-                </span>
-                <span class="abtme_text" id="abt_me2">    
-                    I enjoy learning new technologies and turning ideas into practical projects (like this one!). I have worked with languages such as JavaScript, Python, Java, C++, C#, SQL, and Progress 4GL as well as technologies like React Native, Firebase, Arduino, and ESP32.
-                </span>
-                <span class="abtme_text" id="abt_me3">
-                    I’m always looking for opportunities to improve my skills, explore new challenges, and grow as a developer. I believe that every project is an opportunity to learn something new.
-                </span>
+                <span id="abtme_title">About Me</span>
+                <div class="abtme_texts">
+                    <span class="abtme_text" id="abt_me1">
+                        Hey you! My name is Rafaela, and I’m a student and aspiring software developer with a passion for technology and problem-solving. I have a background in Informatics and experience with different areas of software development, including web development, mobile applications, databases, and IoT.
+                    </span>
+                    <span class="abtme_text" id="abt_me2">    
+                        I enjoy learning new technologies and turning ideas into practical projects (like this one!). I have worked with languages such as JavaScript, Python, Java, C++, C#, SQL, and Progress 4GL as well as technologies like React Native, Firebase, Arduino, and ESP32.
+                    </span>
+                    <span class="abtme_text" id="abt_me3">
+                        I’m always looking for opportunities to improve my skills, explore new challenges, and grow as a developer. I believe that every project is an opportunity to learn something new.
+                    </span>
+                </div>
             </div>
+        </div>
+
+        <div id="projects" class="divisions">
+            <span id="projects_title" class="title">Projects</span>
+            <div id="prj_cards_box">
+                <div class="project_card">
+                    <span class="project_title">NaturAll</span>
+                    <img src="imgs/naturall.png" alt="img">
+                    <span>text abt project</span>
+                </div>
+
+                <div class="project_card">
+                    <span class="project_title">School Break</span>
+                    <img src="imgs/naturall.png" alt="img">
+                    <span>text abt project</span>
+                </div>
+
+                <div class="project_card">
+                    <span class="project_title">Smart Parking</span>
+                    <img src="imgs/naturall.png" alt="img">
+                    <span>text abt project</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="experience" class="divisions">
+            <span id="experience_title" class="title">Experience</span>
+        </div>
+
+        <div id="certifications" class="divisions">
+            <span id="certifications_title" class="title">Certifications</span>
         </div>
     </div>
 
@@ -68,6 +102,11 @@
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/960px-WhatsApp.svg.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="WhatsApp" class="contact_img">
             </a>
         </div>
+    </div>
+
+    <div id="loading">
+        <div class="loader"></div>
+        <span>Loading...</span>
     </div>
 
     <script src="script.js"></script>

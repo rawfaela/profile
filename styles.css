@@ -15,12 +15,19 @@ body{
     background-color: rgb(227, 192, 255);
     min-height: 100vh;
 }
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
 #header{
     color: white;
     top: 0;
     background-color: rgb(137, 72, 146);
     text-align: center;
     position: sticky;
+    z-index: 100;
 }
 #menu{
     display: flex;
@@ -45,6 +52,7 @@ body{
     filter: brightness(110%);
 }
 
+
 #content{
     flex: 1;
 }
@@ -64,14 +72,12 @@ body{
 #translate_button:hover{
     filter: brightness(80%);
 }
+
 #aboutme{
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
-    align-items: center;
     margin: 30px;
     gap: 20px;
-    
 }
 .abtme_picture{
     height: 300px;
@@ -80,11 +86,56 @@ body{
 .abtme{
     display: flex;
     flex-direction: column;
+    align-self: stretch;
+}
+#abtme_title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.abtme_texts{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 8px;
 }
 .abtme_text{
     font-size: 17px;
 }
+.divisions{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.title{
+   font-size: 25px;
+   font-weight: bold; 
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+#prj_cards_box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px;
+}
+.project_card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(223, 155, 228);
+    padding: 10px;
+    border-radius: 10px;
+}
+.project_title{
+    font-weight: 600;
+    color: rgb(84, 8, 99);
+    font-size: 17px;
+}
+
 
 #footer{
     position: sticky;
@@ -120,12 +171,8 @@ body{
     width: 40px;
 }
 
-a{
-    text-decoration: none;
-    color: #000;
-}
 
-@media (max-width: 600px) {
+@media (max-width: 600px) { /* ! ATUALIZAR QUANDO TERMINAR TUDO */
     #menu {
         gap: 8px;
     }
@@ -160,4 +207,37 @@ a{
         height: 35px;
         width: 35px;
     }
+}
+
+
+#loading {
+    position: fixed;
+    inset: 0;
+    background-color: rgb(84, 8, 99);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    z-index: 9999;
+    color: white;
+    font-size: 20px;
+    transition: opacity 0.5s ease;
+}
+.loader {
+    width: 45px;
+    height: 45px;
+    border: 5px solid rgb(223, 155, 228);
+    border-top: 5px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+#loading.hidden {
+    opacity: 0;
+    pointer-events: none;
 }
