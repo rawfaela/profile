@@ -7,6 +7,9 @@ rgb(84, 8, 99)
 
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 
+html {
+    scroll-padding-top: var(--header-height);
+}
 body{
     display: flex;
     flex-direction: column;
@@ -62,12 +65,16 @@ a{
     margin-top: 10px;
 }
 #translate_button{
-    margin-right: 10px;
     background-color: rgb(223, 155, 228);
     padding: 3px;
     border-radius: 5px;
-    transition: 0.3s;
+    border: 2px solid rgb(137, 72, 146);
     font-size: 12px;
+    position: fixed;
+    top: calc(var(--header-height) + 10px);
+    right: 10px;
+    z-index: 50;
+    transition: 0.3s;
 }
 #translate_button:hover{
     filter: brightness(80%);
@@ -120,7 +127,7 @@ a{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     margin: 10px;
 }
 .project_card{
@@ -129,13 +136,32 @@ a{
     background-color: rgb(223, 155, 228);
     padding: 10px;
     border-radius: 10px;
+    transition: 0.3s;
+    max-width: 25%;
+    align-items: center;
+}
+.project_card:hover{
+    filter: brightness(105%);
+    transform: scale(1.02);
 }
 .project_title{
     font-weight: 600;
     color: rgb(84, 8, 99);
     font-size: 17px;
+    margin-bottom: 10px;
 }
-
+.prj_img{
+    max-width: 70%;
+    border-radius: 10px;
+}
+.prj_text{
+    margin-inline: 20px;
+    text-align: justify;
+    margin-bottom: 0px;
+}
+.prj_tech{
+    font-weight: bold;
+}
 
 #footer{
     position: sticky;
@@ -164,7 +190,7 @@ a{
 }
 .contact:hover{
     filter: brightness(60%);
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 .contact_img{
     height: 40px;
