@@ -15,6 +15,13 @@ const prj3O = document.getElementById("prj3").textContent;
 const prj_techO = document.querySelector('.prj_tech').textContent;
 const prj_techs = document.querySelectorAll('.prj_tech');
 const prj3_techO = document.getElementById("prj3_tech").textContent;
+const exp_titleO = document.getElementById("exp_title").textContent;
+const exp_textO = document.getElementById("exp_text").textContent;
+const ed_title1O = document.getElementById("ed_title1").textContent;
+const ed_title2O = document.getElementById("ed_title2").textContent;
+const ed_title3O = document.getElementById("ed_title3").textContent;
+const ed_title4O = document.getElementById("ed_title4").textContent;
+const ed_title5O = document.getElementById("ed_title5").textContent;
 const footer1O = document.getElementById("footer1").textContent;
 
 translateButton.addEventListener("click", function(event) {
@@ -26,7 +33,7 @@ translateButton.addEventListener("click", function(event) {
         document.getElementById("menu1").textContent = "Sobre mim";
         document.getElementById("menu2").textContent = "Projetos";
         document.getElementById("menu3").textContent = "Experiência";
-        document.getElementById("menu4").textContent = "Certificações";
+        document.getElementById("menu4").textContent = "Formação";
         
         document.getElementById("abtme_title").textContent = "Sobre Mim";
         document.getElementById("abt_me1").textContent = "Oie! Meu nome é Rafaela, sou estudante e aspirante a desenvolvedora de software, apaixonada por tecnologia e resolução de problemas. Tenho formação técnica em Informática e experiência em diferentes áreas do desenvolvimento de software, incluindo desenvolvimento web, aplicações mobile, bancos de dados e IoT.";
@@ -44,7 +51,15 @@ translateButton.addEventListener("click", function(event) {
         });
 
         document.getElementById("experience_title").textContent = "Experiência";
-        document.getElementById("certifications_title").textContent = "Certificações";
+        document.getElementById("exp_title").textContent = "Agrosys - Estagiária de Desenvolvimento de Software";
+        document.getElementById("exp_text").textContent = "Durante meu estágio na Agrosys, adquiri experiência prática em desenvolvimento de software, trabalhando com Progress 4GL e WebSpeed. Contribuí para o desenvolvimento e manutenção de sistemas, aplicando conhecimentos de programação e resolução de problemas em um ambiente profissional. Essa experiência me permitiu aprimorar minhas habilidades técnicas, aprender com projetos reais e compreender melhor o processo de desenvolvimento de software.";
+        
+        document.getElementById("education_title").textContent = "Formação";
+        document.getElementById("ed_title1").textContent = "Bacharelado em Engenharia de Computação - UFSC";
+        document.getElementById("ed_title2").textContent = "Bacharelado em Engenharia de Software - UNESC";
+        document.getElementById("ed_title3").textContent = "Curso Técnico em Informática - SATC";
+        document.getElementById("ed_title4").textContent = "Curso em Desenvolvimento de Software - Academia Bridge (UFSC)";
+        document.getElementById("ed_title5").textContent = "Curso de Fundamentos da IA - SENAI/SC";
 
         document.getElementById("footer1").textContent = "Contato";
     } else {
@@ -71,7 +86,15 @@ translateButton.addEventListener("click", function(event) {
         });
 
         document.getElementById("experience_title").textContent = menu3O;
-        document.getElementById("certifications_title").textContent = menu4O;
+        document.getElementById("exp_title").textContent = exp_titleO;
+        document.getElementById("exp_text").textContent = exp_textO;
+        
+        document.getElementById("education_title").textContent = menu4O;
+        document.getElementById("ed_title1").textContent = ed_title1O;
+        document.getElementById("ed_title2").textContent = ed_title2O;
+        document.getElementById("ed_title3").textContent = ed_title3O;
+        document.getElementById("ed_title4").textContent = ed_title4O;
+        document.getElementById("ed_title5").textContent = ed_title5O;
 
         document.getElementById("footer1").textContent = footer1O;
     }
@@ -85,7 +108,7 @@ function updateHeaderHeight() {
     const header = document.getElementById("header");
     document.documentElement.style.setProperty(
         "--header-height",
-        `${header.offsetHeight + 10}px`
+        `${header.offsetHeight + 5}px`
     );
 }
 updateHeaderHeight();

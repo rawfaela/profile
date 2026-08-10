@@ -101,7 +101,7 @@ a{
 }
 .abtme_texts{
     flex: 1;
-    align-items: center;
+    align-items: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,7 +137,7 @@ a{
     padding: 10px;
     border-radius: 10px;
     transition: 0.3s;
-    max-width: 25%;
+    max-width: 27%;
     align-items: center;
 }
 .project_card:hover{
@@ -151,7 +151,7 @@ a{
     margin-bottom: 10px;
 }
 .prj_img{
-    max-width: 70%;
+    max-width: 80%;
     border-radius: 10px;
 }
 .prj_text{
@@ -159,9 +159,66 @@ a{
     text-align: justify;
     margin-bottom: 0px;
 }
+.prj_text:first-of-type{
+    margin-bottom: 15px;
+}
+.prj_text:last-child {
+    margin-top: auto;
+}
 .prj_tech{
     font-weight: bold;
 }
+
+#experience{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.exp_card{
+    background-color: rgb(223, 155, 228);
+    max-width: 90%;
+    align-self: center;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.exp_title{
+    font-weight: 600;
+    color: rgb(84, 8, 99);
+    font-size: 17px;
+}
+.date{
+    color: rgb(84, 8, 99);
+}
+.exp_text{
+    margin-inline: 20px;
+    text-align: justify;
+}
+
+#ed_cards_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.ed_card {
+    background-color: rgb(223, 155, 228);
+    padding: 10px;
+    border-radius: 10px;
+    width: auto;
+    margin-inline: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.ed_title{
+    font-weight: 600;
+    color: rgb(84, 8, 99);
+    font-size: 17px;
+}
+
 
 #footer{
     position: sticky;
@@ -198,40 +255,123 @@ a{
 }
 
 
-@media (max-width: 600px) { /* ! ATUALIZAR QUANDO TERMINAR TUDO */
+@media (max-width: 600px) {
     #menu {
-        gap: 8px;
+        gap: 6px;
+        padding: 0 5px;
     }
     .menu_opt {
-        font-size: 15px;
-        padding: 8px;
+        font-size: 14px;
+        padding: 7px;
+        margin-bottom: 6px;
     }
 
-    #translate {
-        margin-top: 10px;
+
+    #translate_button {
+        font-size: 11px;
+        right: 8px;
     }
+
 
     #aboutme {
         flex-direction: column;
-        margin: 20px;
+        margin: 25px 15px;
         text-align: center;
+        gap: 15px;
     }
     .abtme_picture {
-        height: 220px;
-        width: 220px;
+        width: 200px;
+        height: 200px;
         object-fit: cover;
+        align-self: center;
+    }
+    .abtme {
+        width: 100%;
+    }
+    #abtme_title {
+        font-size: 22px;
+    }
+    .abtme_texts {
+        gap: 10px;
+        padding: 10px;
     }
     .abtme_text {
         font-size: 15px;
-        line-height: 1.5;
+        text-align: justify;
     }
+
+
+    .title {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+
+    #prj_cards_box {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 10px;
+    }
+    .project_card {
+        max-width: none;
+        width: 85%;
+        padding: 10px;
+    }
+    .project_title {
+        font-size: 16px;
+    }
+    .prj_img {
+        max-width: 90%;
+    }
+    .prj_text {
+        font-size: 14px;
+        margin-inline: 10px;
+    }
+
+
+    .exp_card {
+        max-width: none;
+        width: 85%;
+        padding: 10px;
+    }
+    .exp_title {
+        font-size: 16px;
+    }
+    .exp_text {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-inline: 10px;
+    }
+
+
+    #ed_cards_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+    .ed_card {
+        width: 80%;
+        margin: 0;
+        padding: 10px;
+    }
+    .ed_title {
+        font-size: 15px;
+    }
+
 
     #contacts {
         gap: 15px;
     }
     .contact_img {
-        height: 35px;
         width: 35px;
+        height: 35px;
+    }
+    .contact_title {
+        font-size: 18px;
+        margin: 8px;
     }
 }
 
