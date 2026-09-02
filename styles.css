@@ -407,3 +407,15 @@ a{
     opacity: 0;
     pointer-events: none;
 }
+
+#backButton{
+    background-color: rgb(223, 155, 228);
+    padding: 3px;
+    border-radius: 5px;
+    border: 2px solid rgb(137, 72, 146);
+    margin: 10px;
+    width: fit-content;
+}
+#titleProjects{
+    text-align: center;
+}
